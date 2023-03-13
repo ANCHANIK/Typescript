@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.14.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "tsc -p .",
+    "dev": "nodemon --watch \"/*.ts\" --exec \"ts-node\" server.ts"
+  },
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "typescript-practice",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANCHANIK/Typescript.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "ANCHANIK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ANCHANIK/Typescript/issues"
+  },
+  "homepage": "https://github.com/ANCHANIK/Typescript#readme"
+}
