@@ -1,18 +1,19 @@
-import { Request, Response, NextFunction } from 'express';
 const express = require('express');
 const path = require('path');
-const router = express.Router();
 
 const app = express();
+
+const indexRouter = require('./routes/index');
+
+app.set('port', process.env.PORT || 8088);
 
 // EJS
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.get('/', (req: Request, res: Response, next: NextFunction ) => {
-	res.render('index');
-});
+app.use('/', indexRouter);
 
-app.listen('8088', () => {
+
+app.listen(app.set('port'), () => {
 	console.log('server listen!!');
 });
