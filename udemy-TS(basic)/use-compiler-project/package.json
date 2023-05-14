@@ -1,11 +1,21 @@
 {
-  "name": "use-compiler-project",
+  "name": "understanding-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc app.ts & lite-server",
+    "dev": "ts-node app.ts"
   },
-  "author": "ANCHANIK",
-  "license": "ISC"
+  "author": "Maximilian Schwarzmüller",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
 }
