@@ -11,8 +11,18 @@
     // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
 
     /* Language and Environment */
-    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "target": "ES6",                                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment.*/
+    "lib": [
+      "DOM",
+      "ES6",
+      "DOM.Iterable",
+      "ScriptHost"
+    ],                                                   /* Specify a set of bundled library declaration files that describe the target runtime environment.*/
+                                                         /*
+                                                          * TS는 target에서 정해진 버전에 따라 해당 속성들을 사용할 수 있다.
+                                                          * 옵션 설정되어 있지 않을 때(주석 처리)는 기본 설정이 적용되고, TS가 브라우저에서 작동하는데 필요한 dom API를 지원한다.
+                                                         */
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
     // "experimentalDecorators": true,                   /* Enable experimental support for legacy experimental decorators. */
     // "emitDecoratorMetadata": true,                    /* Emit design-type metadata for decorated declarations in source files. */
@@ -105,5 +115,17 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+  },
+  "exclude": [                                           /* 컴파일 필요없는 파일 제외 */
+    // "analytics.dev.ts"
+    // *.dev.ts
+    "node_modules"                                       /* node_modules 는 자동으로 제외된다. */
+  ],
+  // "include": [                                        /* include에 포함된 스크립트만 컴파일 시킨다. 즉, 여기에 포함되지 않은 어떤 것도 컴파일되지 않도록 한다. */
+  //   "app.ts",
+  //   "analytics.ts"
+  // ],
+  // "files": [                                          /* 컴파일하고자 하는 개별 파일만을 지정할 수 있으며, 규모가 작은 프로젝트에 사용한다. 또한 변경해서는 안되는 다른 형식의 파일들을 지정하고자 할 때.  */
+  // "app.js"
+  //]
 }
