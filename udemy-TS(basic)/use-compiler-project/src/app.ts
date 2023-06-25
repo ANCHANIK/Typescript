@@ -1,6 +1,7 @@
 const button = document.querySelector('button')!;
 
-button?.addEventListener('click', () => {
+// app.ts
+button.addEventListener('click', () => {
     console.log('Clicked!');
     
 });
