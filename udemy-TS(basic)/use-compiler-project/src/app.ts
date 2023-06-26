@@ -1,7 +1,11 @@
 const button = document.querySelector('button')!;
 
-// app.ts
-button.addEventListener('click', () => {
-    console.log('Clicked!');
+function clickHandler (message: string) {
+    console.log('clicked!!' + message);
     
-});
+}
+
+// app.ts
+if (button) {
+    button.addEventListener('click', clickHandler.bind(null, "You'r welcome"));
+}

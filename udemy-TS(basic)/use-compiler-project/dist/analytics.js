@@ -1,3 +1,7 @@
 "use strict";
-console.log('Sending data add wow...');
-const userName = 'ik';
+let logged;
+function sendAnalytics(data) {
+    console.log(data);
+    logged = true;
+}
+sendAnalytics('The Data');

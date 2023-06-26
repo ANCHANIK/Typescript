@@ -1,2 +1,8 @@
-console.log('Sending data add wow...');
-const userName = 'ik';
+let logged;
+
+function sendAnalytics(data: string) {
+    console.log(data);
+    logged = true;
+}
+
+sendAnalytics('The Data');
