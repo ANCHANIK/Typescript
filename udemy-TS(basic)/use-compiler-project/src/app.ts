@@ -12,6 +12,8 @@ function add(n1: number, n2: number) {
 function clickHandler (message: string) {
     // let userName = 'IK';
     console.log('clicked!!' + message);
+    console.log('test');
+    
 }
 
 // app.ts

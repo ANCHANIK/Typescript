@@ -9,8 +9,8 @@ function add(n1, n2) {
 }
 function clickHandler(message) {
     console.log('clicked!!' + message);
+    console.log('test');
 }
 if (button) {
     button.addEventListener('click', clickHandler.bind(null, "You'r welcome"));
 }
-//# sourceMappingURL=app.js.map
